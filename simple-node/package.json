@@ -1,0 +1,19 @@
+{
+  "name": "101-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "prettify": "prettier -l --write \"**/*.js\"",
+    "test": "jest",
+    "dev": "nodemon src/index.js",
+    "docker:build": "sh bin/docker-build.sh",
+    "docker:dev": "sh bin/docker-dev.sh"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.2"
+  }
+}
